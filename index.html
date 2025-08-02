@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carzin</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
@@ -32,9 +38,15 @@
           </div>
 
           <div class="header-imgs">
-            <img src="../imgs/header/img-carro-header.png" />
-            <img src="../imgs/header/sobreposicao1-header.png" />
-            <img src="../imgs/header/sobreposicao2-header.png" />
+            <img src="../imgs/header/img-carro-header.png" alt="Carro Header" />
+            <img
+              src="../imgs/header/sobreposicao1-header.png"
+              alt="Sobreposição 1"
+            />
+            <img
+              src="../imgs/header/sobreposicao2-header.png"
+              alt="Sobreposição 2"
+            />
           </div>
         </nav>
       </div>
@@ -65,7 +77,7 @@
         </div>
       </section>
       <section class="how-it-works">
-        <div class="how-it-works">
+        <div class="how-it-works-content">
           <h3 class="h3 cinza">HOW IT WORKS</h3>
           <h2 class="h2-base">your friends to make your</h2>
           <h2 class="h2-destaque">tour easy</h2>
@@ -108,7 +120,7 @@
         </div>
       </section>
       <section class="best-service">
-        <div class="best-service">
+        <div class="best-service-content">
           <h3 class="h3 cinza">BEST SERVICE</h3>
           <h2 class="h2-base">We</h2>
           <h2 class="h2-destaque">expert</h2>
@@ -175,8 +187,8 @@
           />
         </div>
       </section>
-      <section class="best-service">
-        <div class="best-service">
+      <section class="services-cards">
+        <div class="services-content">
           <h3 class="h3 cinza">BEST SERVICE</h3>
           <h2 class="h2-base">your drive width</h2>
           <h2 class="h2-destaque">our care</h2>
@@ -188,37 +200,175 @@
           <div class="btn">
             <a href="#">Let's Try</a>
           </div>
+        </div>
+        <div class="services-grid">
           <div class="competitive-pricing-card">
-            <img src="../imgs/bestService-icons/dollar-circle.png">
+            <img
+              src="../imgs/bestService-icons/dollar-circle.png"
+              alt="Dollar Icon"
+            />
             <h3 class="h3-base">Competitive Pricing</h3>
           </div>
-          <div class="Easier-rent-card">
-            <img src="../imgs/bestService-icons/smart-car.png">
+          <div class="easier-rent-card">
+            <img
+              src="../imgs/bestService-icons/smart-car.png"
+              alt="Smart Car Icon"
+            />
             <h3 class="h3-base">Easier Rent on your budget</h3>
           </div>
-          <div class="theBestExtended-card">
-            <img src="../imgs/bestService-icons/medal-star.png">
+          <div class="the-best-extended-card">
+            <img
+              src="../imgs/bestService-icons/medal-star.png"
+              alt="Medal Icon"
+            />
             <h3 class="h3-base">The best extended auto warranties</h3>
-        </div>
-        <div class="roadside-card">
-            <img src="../imgs/bestService-icons/tag-user.png">
+          </div>
+          <div class="roadside-card">
+            <img
+              src="../imgs/bestService-icons/tag-user.png"
+              alt="Tag User Icon"
+            />
             <h3 class="h3-base">Roadside assistance 24/7</h3>
-        </div>
-        <div class="yourChoise-card">
-          <img src="../imgs/bestService-icons/layer.png">
-          <h3 class="h3-base">Your choice of mechanic</h3>
-        </div>
-        <div class="mostFlexible-card">
-          <img src="../imgs/bestService-icons/receipt-2.png">
-          <h3 class="h3-base">Most Flexible payment plans</h3>
-        </div>
+          </div>
+          <div class="your-choice-card">
+            <img src="../imgs/bestService-icons/layer.png" alt="Layer Icon" />
+            <h3 class="h3-base">Your choice of mechanic</h3>
+          </div>
+          <div class="most-flexible-card">
+            <img
+              src="../imgs/bestService-icons/receipt-2.png"
+              alt="Receipt Icon"
+            />
+            <h3 class="h3-base">Most Flexible payment plans</h3>
+          </div>
         </div>
       </section>
       <section class="menu-carros">
-        <div class="menu-carros">
-          
+        <div class="menu-carros-content">
+          <h2 class="h2-base">Book Your car</h2>
+          <h2 class="h2-destaque">today!</h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            voluptatum.
+          </p>
+
+          <div class="icon-menu-carros">
+            <img
+              class="furacao-icon"
+              src="../imgs/icons/icon-furacao.png"
+              alt="Furacao Icon"
+            />
+            <img
+              class="st-baixo"
+              src="../imgs/icons/icon-setinha-baixo.png"
+              alt="setinha-baixo"
+            />
+          </div>
+          <div class="carro-card">
+            <img
+              class="bmw-verde"
+              src="../imgs/carros/bmw-verde.png"
+              alt="BMW Verde"
+            />
+            <h3 class="h3-base">M3 Competition</h3>
+            <p class="text cinza">BMW</p>
+            <h2 class="h2-destaque">R$ 240.00</h2>
+            <div class="rating">
+              <img src="../imgs/icons/estrela-icon.png" alt="Estrela" />
+              <span>4.9</span>
+            </div>
+          </div>
+          <div class="pagination">
+            <span class="page-info">
+              <span class="page-label">Page</span>
+              <input
+                type="number"
+                value="1"
+                min="1"
+                max="200"
+                class="page-input"
+              />
+              <span class="page-total">of 200</span>
+            </span>
+            <button class="next-btn">Next Page</button>
+          </div>
         </div>
       </section>
+      <section class="memorable-drive">
+        <div class="memorable-drive-content">
+          <div class="fundo-memorable-drive">
+            <img src="../imgs/fundo.png" alt="Fundo Memorable Drive" />
+          </div>
+          <h2 class="h2-base">We make your drive</h2>
+          <h2 class="h2-destaque">memorable</h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quisquam, voluptatum.
+          </p>
+          <div class="btn">
+            <a href="#">Let's see a video</a>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-content">
+          <h2 class="h2-base">Ready to get started?</h2>
+          <div class="btn footer-btn">
+            <a href="#">Get Started</a>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h5 class="h5 destaque">Links</h5>
+              <ul>
+                <li><a href="#">Email Marketing</a></li>
+                <li><a href="#">Campaigns</a></li>
+                <li><a href="#">Branding</a></li>
+                <li><a href="#">Offline</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h5 class="h5 destaque">About</h5>
+              <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Benefits</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h5 class="h5 destaque">Help</h5>
+              <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="links-finais">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="../imgs/icons/icon-face.png" alt="Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../imgs/icons/icon-insta.png" alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../imgs/icons/icon-twitter.png" alt="Twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
