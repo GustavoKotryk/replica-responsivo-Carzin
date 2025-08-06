@@ -159,6 +159,7 @@ ul {
 .car-model{
     font-size: 20px;
     margin-bottom: 2rem;
+    font-weight: 500;
 }
 
 .blog-info{
@@ -175,6 +176,7 @@ ul {
     color: var(--gray);
     display: flex;
     justify-content: center;
+    font-weight: 500;
 }
 
 .section-title{
@@ -235,13 +237,21 @@ ul {
 .service-label{
     font-size: 20px;
     color: var(--gray);
+    font-weight: 500;
 }
 
 .service-title{
+    margin-top: 1rem;
     font-size: 36px;
     color: var(--text-color);
     margin-bottom: 2rem;
     text-align: left;
+}
+
+.service-title span{
+    font-size: 36px;
+    color: var(--primary-color);
+
 }
 
 .service-description{
@@ -251,6 +261,70 @@ ul {
     text-align: left;
     margin-bottom: 2rem;
 }
+
+.service-description{
+    font-size:16px;
+    color: var(--text-color);
+}
+
+.feature-item{
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.feature-content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.feature-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.feature-description{
+    font-size: 16px;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+.feature-title{
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.btn-primary{
+    padding: 0.2rem 1rem;
+    color: var(--primary-color);
+    border: 1px solid #fe5b3e42;
+}
+
+.service-imagem{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    margin-top: 5rem;
+    margin-left: -1.1rem;
+    margin-bottom: 7rem;
+
+}
+
+.feature-title{
+    margin-top: 1rem;
+    font-size: 36px;
+
+}
+
+.feature-label{
+    font-size: 20px;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+
+
 
 
 
