@@ -225,7 +225,8 @@
 
     <section class="car-booking">
       <div class="section-header">
-        <h3 class="feature-label car-booking">CARS</h3>
+    <div class="rem-cards">
+        <h3 class="feature-label feature-booking">CARS</h3>
         <h2 class="service-title">
           Book Your <br>car <span class="highlight">today!</span>
         </h2>
@@ -233,6 +234,7 @@
           Lorem ipsum dolor sit amet. <br>Quisquam, voluptatum.
         </p>
       </div>
+    </div>
 
       <div class="booking-controls">
         <img src="../imgs/icons/icon-furacao.png" alt="Filtros" class="filter-icon">
@@ -243,11 +245,11 @@
         <div class = "car-details">
         <img src="../imgs/carros/bmw-verde.png" alt="BMW M3 Competition" class="car-image">
         <h3 class="car-model">M3 Competition</h3>
-        <p class="car-brand">BMW</p>
+        <p class="car-brand bmw">BMW</p>
+        <div class="car-star-rating">
         <div class="car-price">R$ 240.00</div>
-        <div class="car-rating">
-          <img src="../imgs/icons/estrela-icon.png" alt="Avaliação" class="rating-icon">
-          <span class="rating-value">4.9</span>
+        <img src="../imgs/icons/estrela-icon.png" alt="Avaliação" class="rating-icon bmw-star">
+          <span class="star-rating-value">4.9</span>
         </div>
       </article>
 
@@ -255,25 +257,25 @@
         <div class="page-info">
           <span class="page-label">Page</span>
           <input type="number" value="1" min="1" max="200" class="page-input" aria-label="Página atual">
-          <span class="page-total">of 200</span>
+          <span class="page-total">of  200</span>
         </div>
-        <button class="btn-secondary">Next Page</button>
+        <div class="btn-next-page">
+          <button class="btn-secondary">Next Page</button>
+        </div>
       </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
     <section class="memorable-drive">
-      <img src="../imgs/fundo.png" alt="Background decorativo" class="background-image">
-      <div class="section-content">
+      <div class="section-content ">
         <h2 class="section-title">
           We make your drive <span class="highlight">memorable</span>
         </h2>
         <p class="section-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Quisquam, voluptatum.
+          voluptatum. Lorem 
         </p>
-        <a href="#" class="btn-primary">Let's see a video</a>
+        <a href="#" class="btn-primary section-btn">Let's see a video</a>
       </div>
     </section>
   </main>
@@ -282,12 +284,12 @@
     <div class="footer-content">
       <div class="footer-cta">
         <h2 class="cta-title">Ready to get started?</h2>
-        <a href="#" class="btn-primary">Get Started</a>
+        <a href="#" class="section-btn footer-btn ">Get Started</a>
       </div>
 
       <nav class="footer-nav">
         <div class="footer-column">
-          <h3 class="column-title">Links</h3>
+          <h3 class="column-title">Services</h3>
           <ul class="footer-links">
             <li><a href="#">Email Marketing</a></li>
             <li><a href="#">Campaigns</a></li>
@@ -315,12 +317,12 @@
         </div>
       </nav>
 
-      <div class="footer-bottom">
-        <ul class="legal-links">
+      <ul class="legal-links">
           <li><a href="#">Terms & Conditions</a></li>
           <li><a href="#">Privacy Policy</a></li>
         </ul>
 
+      <div class="footer-bottom">
         <ul class="social-links">
           <li>
             <a href="#" aria-label="Facebook">
