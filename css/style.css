@@ -21,7 +21,7 @@
 }
 
 
-.header-title {
+.header-logo {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: var(--spacing);
@@ -74,13 +74,13 @@ ul {
     margin-top: 0.5rem;
 }
 
-.menu-mobile {
-    display: none;
+.mobile-menu-toggle {
+    display: block;
 }
 
 .menu-desktop,
 .menu-auth {
-    display: flex;
+    display: none;
 }
 
 .top-bar {
@@ -189,7 +189,7 @@ ul {
     font-weight: 500;
 }
 
-.section-title{
+.section-title-blog{
     font-size: 36px;
     color: var(--text-color);
     text-align: center;
@@ -200,7 +200,7 @@ ul {
     font-size: 36px;    
 }
 
-.section-description{
+.section-description-blog{
     font-size: 16px;
     color: var(--text-color);
     text-align: center;
@@ -542,14 +542,6 @@ ul {
 
 }
 
-.footer-nav{
-
-}
-
-.footer-column{
-
-}
-
 .column-title{
     color:var(--primary-color);
     margin-bottom: 1rem;
@@ -564,18 +556,37 @@ ul {
 
 .legal-links{
     display: flex;
-    gap: 1rem;
+    gap: 2.5rem;
+    margin-top: 5rem;
+    color: var(--text-color);
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 15rem;
 }
 
 
 
-@media (max-width: 768px) {
-    .menu-mobile {
-        display: block;
+@media (min-width: 1024px) {
+    .mobile-menu-toggle {
+        display: none; /* esconde botão mobile */
     }
 
     .menu-desktop,
     .menu-auth {
-        display: none;
+        display: flex; /* mostra o menu no desktop */
+        gap: 2rem;
+        order: 2; /* vem depois da logo */
     }
+
+    .header-nav{
+        align-items: start;
+        justify-content: start;
+    }
+
+    
 }
