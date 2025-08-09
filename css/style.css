@@ -18,6 +18,7 @@
 
 .body {
     font-family: Outfit, sans-serif;
+    margin-right: 1rem;
 }
 
 
@@ -28,6 +29,14 @@
     color: var(--primary-color);
     margin-top: 3rem;
     margin-left: 1rem;
+}
+
+.header-car-image{
+    width: 311px;
+    height: 592px;
+    margin-left: 1rem;
+    border-radius: 16px;
+    
 }
 
 .hero-title {
@@ -43,6 +52,7 @@
 .section-description {
     font-size: 16px;
     color: var(--text-color);
+    font-weight: 100;
 }
 
 .highlight {
@@ -60,17 +70,12 @@ ul {
     padding: 0;
 }
 
-.header, .main, .footer {
-    padding: var(--spacing);
-    max-width: 1200px;
-}
 
 .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--spacing);
-    background-color: var(--white);
     margin-top: 0.5rem;
 }
 
@@ -108,12 +113,12 @@ ul {
 }
 
 .memorable-drive{
-    padding: 80px 80px;
+    padding: 80px 50px;
     background-image: url(../imgs/background.png);
     background-size: cover;
     background-position: center;
-    margin-left: -2rem ;
-    margin-right: -2rem;
+    margin-right: -1rem;
+    margin-left: -1rem;
 }
 
 
@@ -140,6 +145,7 @@ ul {
 
 .blog-card {
     display: flex;
+    
 }
 
 .blog-info {
@@ -157,7 +163,7 @@ ul {
     color: var(--gray);
     font-size: 16px;
     display: flex;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 
 }
 
@@ -173,7 +179,7 @@ ul {
 }
 
 .blog-info{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .how-it-works {
@@ -513,10 +519,13 @@ ul {
 .footer{
     background-color: var(--light-gray);
     margin-top: -1rem;
+    margin-left: 1rem;
+    border-radius: 16px;
 }
 
 .footer-content {
     margin-left: 1rem;
+
     
 }
 
@@ -566,27 +575,140 @@ ul {
     flex-direction: row;
     gap: 2.5rem;
     margin-top: 3rem;
-    margin-bottom: 15rem;
+    margin-bottom: 1rem;
+}
+
+.blog-card-desk{
+    display: none;
 }
 
 
 
 @media (min-width: 1024px) {
     .mobile-menu-toggle {
-        display: none; /* esconde botão mobile */
+        display: none; 
     }
 
-    .menu-desktop,
-    .menu-auth {
-        display: flex; /* mostra o menu no desktop */
+    .menu-desktop {
+        display: flex; 
         gap: 2rem;
-        order: 2; /* vem depois da logo */
+        
+    }
+
+    .blog-card-desk{
+        display: flex;
+        
+    }
+
+    .menu-auth {
+        display: flex; 
+        gap: 1.5rem;
+        color: var(--text-color);
+        margin-right: 19rem;
     }
 
     .header-nav{
         align-items: start;
         justify-content: start;
+        color: var(--text-color);
+        margin-left: 7rem;
+
     }
 
+    .header-logo {
+        margin-top: 16px;
+        font-size: 36px;
+        margin-left: 4rem;
+    }
+
+    .top-bar{
+        margin-top: 1rem;
+
+    }
+
+    .header-car-image {
+        position:absolute;
+        width: 390px;
+        height: 660px;
+        margin-top: -5rem;
+        border-radius: 16px;
+        z-index: -1;
+    }
     
+    .hero-content{
+        position: relative;
+        margin-left: 29rem;
+        margin-top: 6rem;
+    }
+
+    .hero-title{
+        font-size: 56px;
+        margin-bottom: 2rem;
+        margin-top: -2rem;
+        font-weight: bold;
+    }
+    .highlight{
+        font-size: 56px;
+        font-weight: bold;
+
+    }
+
+    .hero-content{
+        width: 40%;
+        color: var(--text-color)
+    }
+
+    .section-subtitle{
+        margin-top: 4rem;
+    }
+
+    .blog-image{
+        width: 90px;
+        height: 70px;
+    }
+
+    .car-rating{
+        margin-top: -1.4rem;
+        gap: 1rem;
+    }
+
+    .car-model{
+        margin-right: 3rem;
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    .steps-grid{
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .rating-value{
+        font-weight: bold;
+    }
+
+    .step-icon{
+        margin: 0;
+    }
+
+    .step-card{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .step-description{
+        width: 70%;
+    }
+
+    .cards-hero{
+        display: flex;
+    }
+
+    .memorable-drive{
+        height: 653px;
+        width: 1440px;
+    }
 }
