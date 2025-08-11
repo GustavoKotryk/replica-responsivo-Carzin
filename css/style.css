@@ -140,7 +140,7 @@ ul {
 }
 
 .main {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 .blog-card {
@@ -589,6 +589,10 @@ ul {
         display: none; 
     }
 
+    .main{
+        margin-left: 0;
+    }
+
     .menu-desktop {
         display: flex; 
         gap: 2rem;
@@ -604,7 +608,7 @@ ul {
         display: flex; 
         gap: 1.5rem;
         color: var(--text-color);
-        margin-right: 19rem;
+        margin-right: 15rem;
     }
 
     .header-nav{
@@ -711,4 +715,40 @@ ul {
         height: 653px;
         width: 1440px;
     }
+
+    .how-it-works{
+        margin-top: 12rem;
+    }
+
+    .steps-grid{
+        margin-left: 6rem;
+    }
+
+    .section-title-blog{
+        font-size: 56px;
+    }
+
+    .section-description-blog{
+        width: 40%;
+        display: flex;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .step-card{
+        height: 25rem;
+    }
+
+    .section-label{
+        color: var(--text-color);
+        font-weight: 5;
+    }
+
+    .section-title-blog{
+        width: 40%;
+        text-align: center;
+        justify-self: center;
+    }
+
+    
 }
