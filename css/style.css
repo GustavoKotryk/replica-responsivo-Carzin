@@ -18,7 +18,6 @@
 
 .body {
     font-family: Outfit, sans-serif;
-    margin-right: 1rem;
 }
 
 
@@ -113,12 +112,10 @@ ul {
 }
 
 .memorable-drive{
-    padding: 80px 50px;
     background-image: url(../imgs/background.png);
     background-size: cover;
     background-position: center;
     margin-right: -1rem;
-    margin-left: -1rem;
 }
 
 
@@ -174,8 +171,9 @@ ul {
 
 .car-model{
     font-size: 20px;
-    margin-bottom: 2rem;
     font-weight: 500;
+    margin-right: 3rem;
+    white-space: nowrap;
 }
 
 .blog-info{
@@ -401,10 +399,7 @@ ul {
 }
 
 
-.car-model{
-    font-size: 24px;
-    color: var(--text-color);
-}
+
 
 .car-price{
     font-size: 22px;
@@ -477,7 +472,7 @@ ul {
 }
 
 .car-booking{
-    padding:5rem 1rem 3rem 1rem;
+    padding:5rem 1rem 3rem 0rem;
     background-color: var(--light-gray);
     border-radius: 18px;
     margin-top: 4rem;
@@ -604,7 +599,7 @@ ul {
     }
 
     .car-booking-desk{
-    display: block;
+    display: flex;
 }  
 
     .main{
@@ -626,7 +621,8 @@ ul {
         display: flex; 
         gap: 1.5rem;
         color: var(--text-color);
-        margin-right: 18em;
+        width: 20%;
+        justify-self: end;
     }
 
     .header-nav{
@@ -689,12 +685,6 @@ ul {
         height: 70px;
     }
 
-    .car-model{
-        margin-right: 3rem;
-        font-size: 20px;
-        white-space: nowrap;
-    }
-
     .steps-grid{
         display: flex;
         gap: 2rem;
@@ -726,7 +716,6 @@ ul {
 
     .memorable-drive{
         height: 653px;
-        width: 1440px;
     }
 
     .how-it-works{
@@ -848,25 +837,31 @@ ul {
     
     .cars{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 100%;
     }
 
 .car-booking-desk {
-    padding: 3rem 2rem;
+    padding: 4rem 1rem 3rem 1rem ;
     background-color: var(--background-color);
+    border-radius: 2%;
+    margin-top: 15rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 10rem;
 }
 
 .rem-cards-desk {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin-left: 4.5rem ;
 }
 
 .feature-booking-desk {
-    color: var(--text-color);
+    color: var(--gray);
     font-weight: 600;
-    font-size: 14px;
-    margin-bottom: 0.5rem;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -1rem;
 }
 
 .service-title-desk {
@@ -906,10 +901,9 @@ ul {
     border: 1px solid #e5e5e5;
     background-color: white;
     color: var(--text-color);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    border-radius: 30px;
     font-size: 14px;
+    width: 120px;
 }
 
 .cars {
@@ -917,6 +911,7 @@ ul {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     margin-bottom: 3rem;
+    margin-right: 2rem;
 }
 
 .featured-car-desk {
@@ -930,8 +925,7 @@ ul {
 .desk-details {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
 }
 
 .car-image {
@@ -939,13 +933,15 @@ ul {
     height: auto;
     margin-bottom: 1rem;
     object-fit: contain;
+    margin-left: 1.7rem;
 }
 
-.car-model {
-    font-size: 18px;
+.car-model-desk {
+    font-size: 24px;
     font-weight: 600;
     color: var(--dark-color);
     margin-bottom: 0.25rem;
+    margin: 0;
 }
 
 .car-brand {
@@ -961,17 +957,16 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 110%;
+    width: 115%;
     margin-top: auto;
     padding-top: 0.5rem;
 }
 
-.car-price {
+.car-price-desk{
     font-size: 16px;
     font-weight: 600;
     color: var(--primary-color);
-    margin-left: 0.5rem;
-
+    margin: 0;
 }
 
 .rating-section {
@@ -1029,5 +1024,95 @@ ul {
 
 .page-total-desk {
     font-size: 14px;
+}
+
+.bmw{
+    margin: 0;
+    color: var(--gray);
+    margin-right: 9rem;
+}
+
+.recently-add{
+    position: absolute;
+    margin-left: 60rem;
+    width: 150px;
+}
+
+.next-pag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-das-setinhas{
+    padding: 0.3rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    border-color: var(--background-color);
+}
+
+.page-input{
+    border-radius: 10px;
+}
+
+.page-info-desk{
+    color: var(--text-color);
+    margin-right: 3rem;
+}
+
+.memorable-drive{
+    background-image: url(../imgs/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: -1rem;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.section-content{
+    max-width: 100%;
+}
+
+.mmdrive{
+    font-size: 56px;
+    width: 50%;
+    margin-left: 24rem;
+    margin-top: 10rem;
+
+}
+.mmdrive span{
+    font-size: 56px;
+}
+
+.dcpt{
+    width: 30%;
+    margin-left: 32rem;
+    margin-top: 5rem;
+    font-weight: 100;
+}
+
+
+.btn-desk-img{
+ margin-left: 40rem;   
+}
+
+.footer-content{
+    display: flex;
+    gap: 8rem;
+}
+
+.footer-nav{
+    display: flex;
+    gap: 8rem;
+}
+
+.legal-links{
+    position: absolute;
+}
+
+.desk-cta{
+    
 }
 }
