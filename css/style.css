@@ -311,11 +311,17 @@ ul {
     font-weight: 500;
 }
 
+.carro-feature{
+    width: 340px;
+    margin-left: -1rem;
+}
+
 .btn-primary{
     padding: 0.5rem 1.7rem;
     color: var(--primary-color);
     border: 1px solid #fe5b3e42;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 .service-imagem{
@@ -582,12 +588,24 @@ ul {
     display: none;
 }
 
+.car-booking-desk{
+    display: none;
+}
+
 
 
 @media (min-width: 1024px) {
     .mobile-menu-toggle {
         display: none; 
     }
+
+    .car-booking{
+        display: none;
+    }
+
+    .car-booking-desk{
+    display: block;
+}  
 
     .main{
         margin-left: 0;
@@ -608,7 +626,7 @@ ul {
         display: flex; 
         gap: 1.5rem;
         color: var(--text-color);
-        margin-right: 15rem;
+        margin-right: 18em;
     }
 
     .header-nav{
@@ -718,10 +736,11 @@ ul {
 
     .how-it-works{
         margin-top: 12rem;
+        margin-left: -5rem;
     }
 
     .steps-grid{
-        margin-left: 6rem;
+        margin-left: 9rem;
     }
 
     .section-title-blog{
@@ -737,6 +756,8 @@ ul {
 
     .step-card{
         height: 25rem;
+        width: 20rem;
+
     }
 
     .section-label{
@@ -750,5 +771,114 @@ ul {
         justify-self: center;
     }
 
+    .carro-feature{
+        position: absolute;
+        margin-left: -36rem;
+        margin-top: -51rem;
+        height: 760px;
+        width: 500px;
+    }
+
+    .best-service{
+        margin-top: 10rem;
+        margin-left: 37rem;
+        width: 38%;
+    }
+
+    .service-title{
+        font-size: 56px;
+        width: 80%;
+    }
+
     
+
+    .service-title span{
+        font-size: 56px;
+    }
+
+    .service-label{
+        color: var(--text-color);
+        font-weight: 5;
+    }
+    
+    .service-description{
+        margin-bottom: 1rem;
+        font-weight: 100;
+    }
+
+
+    .service-cards{
+        display: flex;
+
+    }
+
+    .services-grid{
+        grid-template-columns: repeat(3, 1fr);
+        position: absolute;
+        margin-top: -20rem;
+        margin-left: 36rem;
+        width: 480px;
+    }
+
+    
+
+    .service-description-desk{
+        width: 30%;
+        margin-bottom: 3rem;
+    }
+
+    .section-header{
+        margin-left: -8rem;
+    }
+
+    .section-header-desk{
+        margin-left: 15rem;
+    }
+
+    .feature-label{
+        color: var(--text-color);
+        font-weight: 5;
+    }
+
+    .btn-primary{
+        background-color: var(--primary-color);
+        color: var(--white);
+        font-weight: 100;
+    }
+
+   .menu-icon{
+    background-color: var(--white);
+    color: var(--primary-color);
+   }
+    
+    .cars{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 80%;
+    }
+
+    .car-booking-desk{
+        padding: 2rem;
+        background-color: var(--background-color);
+    }
+
+    .top-bar-carbooking{
+        
+    }
+
+    .desk-details{
+        width: 200px;
+        margin-bottom: 2rem;
+        height: 200px;
+
+    }
+
+    .car-image{
+        width: 150px;
+        margin-top: 1rem;
+    }
+
+    .car-price{
+        margin-left: 1rem;
+    }
 }
