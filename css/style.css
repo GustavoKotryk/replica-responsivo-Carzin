@@ -161,6 +161,7 @@ ul {
     margin-right: 3rem;
     white-space: nowrap;
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .blog-info{
@@ -604,11 +605,24 @@ ul {
     display: none;
 }
 
+.steps-grid-desktop{
+    display: none;
+}
+
+.hero-tile-desktop{
+    display: none;
+}
+
 
 
 @media (min-width: 1024px) {
     .mobile-menu-toggle {
         display: none; 
+    }
+
+
+    .hero-title{
+        display: none;
     }
 
     .car-booking{
@@ -618,6 +632,10 @@ ul {
     .car-booking-desk{
     display: flex;
 }  
+
+    .steps-grid{
+        display: none;
+    }
 
     .main{
         margin-left: 0;
@@ -705,6 +723,8 @@ ul {
     .steps-grid{
         display: flex;
         gap: 2rem;
+        justify-content: center;
+        align-items: center;
     }
     
     .rating-value{
@@ -736,10 +756,6 @@ ul {
     .how-it-works{
         margin-top: 12rem;
         margin-left: -5rem;
-    }
-
-    .steps-grid{
-        margin-left: 9rem;
     }
 
     .section-title-blog{
@@ -814,8 +830,8 @@ ul {
     .services-grid{
         grid-template-columns: repeat(3, 1fr);
         position: absolute;
-        margin-top: -20rem;
-        margin-left: 36rem;
+        margin-top: -23rem;
+        margin-left: 45rem;
         width: 480px;
     }
 
@@ -1107,7 +1123,10 @@ ul {
     position: absolute;
 }
 
-.desk-cta{
-    
+.hero-title-desktop{
+    font-size: 56px;   
+    font-weight: bold; 
 }
+
+
 }
