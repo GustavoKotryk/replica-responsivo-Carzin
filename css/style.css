@@ -368,6 +368,7 @@ ul {
     display: flex;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    margin-left: 2rem;
 }
 
 .filter-icon{
@@ -395,6 +396,8 @@ ul {
     padding: 2rem 1rem 1.5rem 1rem; 
     background-color: var(--white);
     border-radius: 20px;
+    margin-left: 1rem;
+    gap: 1rem;
 
 }
 
@@ -409,8 +412,8 @@ ul {
 }
 
 .bmw{
-    margin-top: -2rem;
-    margin-right: 8.3rem;
+    margin-right: 9.5rem;
+
 }
 
 .bmw-star{
@@ -420,6 +423,7 @@ ul {
     display: flex;
     align-items: center;
     margin-top: 0.5rem;
+    margin-right: 1rem;
 }
 
 .rating-icon{
@@ -437,6 +441,7 @@ ul {
     font-size: 18px;
     color: var(--text-color);
     font-weight: 300;
+    margin-left: 2rem;
 }
 
 .btn-next-page{
@@ -1027,9 +1032,7 @@ ul {
 }
 
 .bmw{
-    margin: 0;
-    color: var(--gray);
-    margin-right: 9rem;
+    position: absolute;
 }
 
 .recently-add{
