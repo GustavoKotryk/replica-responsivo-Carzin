@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -107,16 +106,7 @@ ul {
     padding: 9px;
     border: 1px solid rgba(254, 91, 62, 0.055);
 }
-.memorable-title{
-    color:white
-}
 
-.memorable-drive{
-    background-image: url(../imgs/background.png);
-    background-size: cover;
-    background-position: center;
-    margin-right: -1rem;
-}
 
 
 
@@ -126,9 +116,7 @@ ul {
     margin: 2rem 0;
 }
 
-.memorable-drive .section-title h2{
-    color: white;
-}
+
 
 .section-subtitle {
     display: flex;
@@ -136,9 +124,7 @@ ul {
     margin-top: 2rem;
 }
 
-.main {
-    margin-left: 1.5rem;
-}
+
 
 .blog-card {
     display: flex;
@@ -174,10 +160,11 @@ ul {
     font-weight: 500;
     margin-right: 3rem;
     white-space: nowrap;
+    margin-top: 0;
 }
 
 .blog-info{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .how-it-works {
@@ -307,6 +294,7 @@ ul {
     font-size: 20px;
     color: var(--text-color);
     font-weight: 500;
+    margin: 0;
 }
 
 .carro-feature{
@@ -441,7 +429,7 @@ ul {
     font-size: 18px;
     color: var(--text-color);
     font-weight: 300;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .btn-next-page{
@@ -460,7 +448,36 @@ ul {
     justify-self: center;
     align-self: center;
 
+
 }
+
+.memorable-drive {
+    position: relative;
+    background-image: url('../imgs/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+  
+  .section-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .memorable-drive {
+      padding: 60px 15px;
+      min-height: 400px;
+    }
+  }
 
 .background-image{
     height: 100mv;
@@ -500,8 +517,6 @@ ul {
     font-size: 36px;
     color: var(--white);
     text-align: center;
-    margin-left: -2rem;
-    margin-right: -2rem;
 
 }
 
@@ -510,12 +525,10 @@ ul {
     color: var(--white);
     text-align: center;
     margin-bottom: 3rem;
-    margin-left: -2rem;
-    margin-right: -2rem;
 }
 
 .section-btn{
-    margin-left: 2rem;
+    margin-left: 4.5rem;
     padding: 0.5rem 1.7rem;
     background-color: var(--primary-color);
     color: var(--white)
@@ -523,9 +536,8 @@ ul {
 
 
 .footer{
+    padding: auto;
     background-color: var(--light-gray);
-    margin-top: -1rem;
-    margin-left: 1rem;
     border-radius: 16px;
 }
 
@@ -719,9 +731,7 @@ ul {
         display: flex;
     }
 
-    .memorable-drive{
-        height: 653px;
-    }
+   
 
     .how-it-works{
         margin-top: 12rem;
@@ -816,13 +826,11 @@ ul {
         margin-bottom: 3rem;
     }
 
-    .section-header{
-        margin-left: -8rem;
-    }
 
     .section-header-desk{
         margin-left: 15rem;
     }
+
 
     .feature-label{
         color: var(--text-color);
@@ -1064,15 +1072,6 @@ ul {
     margin-right: 3rem;
 }
 
-.memorable-drive{
-    background-image: url(../imgs/background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: -1rem;
-    overflow: hidden;
-    max-width: 100%;
-}
 
 .section-content{
     max-width: 100%;
@@ -1087,13 +1086,6 @@ ul {
 }
 .mmdrive span{
     font-size: 56px;
-}
-
-.dcpt{
-    width: 30%;
-    margin-left: 32rem;
-    margin-top: 5rem;
-    font-weight: 100;
 }
 
 
