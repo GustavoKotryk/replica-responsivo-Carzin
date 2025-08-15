@@ -351,6 +351,7 @@ ul {
     margin-top: 2rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
+    justify-content: space-between;
 }
 
 .filter-icon{
@@ -365,10 +366,10 @@ ul {
 .expand-icon{
     width: 54px;
     height: 54px;
-    margin-left: 9.5rem;
     padding: 1rem;
     background-color: white;
     border-radius: 8px;
+    margin-right: 2rem;
 }
 
 .car-details{
@@ -387,7 +388,7 @@ ul {
 
 
 .car-price{
-    font-size: 22px;
+    font-size: 20px;
     color: var(--primary-color);
     font-weight: 600;
     margin-left: 2.5rem;
@@ -470,12 +471,7 @@ ul {
     align-self: center;
   }
   
-  @media (max-width: 768px) {
-    .memorable-drive {
-      padding: 60px 35px;
-      min-height: 500px;
-    }
-  }
+
 
 .background-image{
     height: 100mv;
@@ -859,7 +855,7 @@ ul {
 
 
     .section-header-desk{
-        margin-right: 10rem;
+        margin-right: 1rem;
     }
 
 
@@ -879,11 +875,8 @@ ul {
     color: var(--primary-color);
    }
     
-    .cars{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        max-width: 100%;
-    }
+ 
+
 
 .car-booking-desk {
     padding: 4rem 1rem 3rem 1rem ;
@@ -950,13 +943,7 @@ ul {
     width: 120px;
 }
 
-.cars {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-    margin-right: 2rem;
-}
+
 
 .featured-car-desk {
     background-color: white;
@@ -1161,5 +1148,178 @@ ul {
     margin-top: 1rem;
 }
 
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .cars {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1.5rem;
+        max-width: 100%;
+    }
+
+    .featured-car-desk{
+        margin-bottom: 1rem;
+    }
+
+    .recently-add {
+        position: static;
+        margin: 0;
+        width: 120px; 
+        margin-left: auto; 
+    }
+
+    .car-booking-desk {
+        padding: 3rem 1rem 2rem 1rem;
+        margin: 10rem 1rem 5rem 1rem; 
+    }
+
+    .rem-cards-desk {
+        max-width: 100%;
+        margin-left: 2rem; 
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr) !important; 
+        position: static; 
+        margin: 2rem 0;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .best-service {
+        margin-top: 8rem; 
+        margin-left: 20rem; 
+        width: 50%; 
+    }
+
+    .carro-feature {
+        position: absolute;
+        margin-left: -25rem; 
+        margin-top: -40rem; 
+        height: 600px; 
+        width: 400px; 
+    }
+
+    .service-title {
+        font-size: 42px;
+        width: 90%; 
+    }
+
+    .service-title span {
+        font-size: 42px;
+    }
+
+    .section-title-blog {
+        font-size: 42px;
+        width: 60%; 
+    }
+
+    .mmdrive {
+        font-size: 42px; 
+        width: 70%; 
+    }
+
+    .mmdrive span {
+        font-size: 42px;
+    }
+
+    .hero-title-desktop {
+        font-size: 42px; 
+    }
+
+    .how-it-works {
+        margin-top: 8rem; 
+        margin-left: -2rem; 
+    }
+
+    .step-card {
+        height: 20rem; 
+        width: 18rem;
+        padding: 15px 0px; 
+    }
+
+    .footer-content {
+        gap: 4rem; 
+        margin-left: 5rem; 
+    }
+
+    .footer-nav {
+        gap: 3rem;
+        margin-left: 5rem; 
+    }
+
+    .hero-content {
+        margin-left: 25rem; 
+        margin-top: 4rem; 
+        width: 50%;
+    }
+
+    .header-car-image {
+        width: 350px; 
+        height: 600px; 
+        margin-top: -3rem; 
+    }
+
+    .header-nav {
+        margin-left: 4rem; 
+    }
+
+    .header-logo {
+        margin-left: 2rem; 
+        font-size: 32px; 
+    }
+
+    .top-bar-carbooking .btn-desk {
+        padding: 0.6rem 1.2rem;
+        font-size: 13px; 
+        width: 100px; 
+    }
+
+    .next-pag {
+        flex-direction: column; 
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .page-info-desk {
+        margin-right: 0; 
+    }
+    
+    .header-car-image{
+        margin-top: -5rem;
+    }
+
+     .car-star-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+    }
+
+    .car-price-desk {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--primary-color);
+        margin: 0;
+    }
+
+    
+
+   
+}
+
+@media (min-width: 1440px) {
+    .cars {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+        gap: 1.5rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
 
 }
