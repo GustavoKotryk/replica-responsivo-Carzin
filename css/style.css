@@ -376,10 +376,10 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     padding: 2rem 1rem 1.5rem 1rem; 
     background-color: var(--white);
     border-radius: 20px;
-    margin-left: 1rem;
     gap: 1rem;
 
 }
@@ -765,7 +765,7 @@ ul {
 
     .how-it-works{
         margin-top: 12rem;
-        margin-left: -5rem;
+        
     }
 
     .section-title-blog{
@@ -840,22 +840,15 @@ ul {
 
     .services-grid{
         grid-template-columns: repeat(3, 1fr);
-        position: absolute;
-        margin-top: -23rem;
-        margin-left: 47rem;
-        width: 480px;
     }
 
-    
+    .services-cards{
+        display: flex;
+    }
 
     .service-description-desk{
         width: 80%;
         margin-bottom: 3rem;
-    }
-
-
-    .section-header-desk{
-        margin-right: 1rem;
     }
 
 
@@ -957,6 +950,8 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    align-self: center;
+    
 }
 
 .car-image {
@@ -986,7 +981,6 @@ ul {
 
 .car-star-rating {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 115%;
     margin-top: auto;
@@ -1232,7 +1226,6 @@ ul {
 
     .how-it-works {
         margin-top: 8rem; 
-        margin-left: -2rem; 
     }
 
     .step-card {
@@ -1294,7 +1287,6 @@ ul {
 
      .car-star-rating {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         width: 100%;
         margin-top: 1rem;
@@ -1307,8 +1299,6 @@ ul {
         color: var(--primary-color);
         margin: 0;
     }
-
-    
 
    
 }
